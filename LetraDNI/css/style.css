@@ -1,0 +1,16 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+color: rgb(252, 151, 232);
+text-align: center;
+}
+
+.contenedor{
+    max-width: 60%;
+    margin: auto;
+}
+
+#imgDni, .texto-centrado{
+   text-align: center;
+}

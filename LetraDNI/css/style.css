@@ -14,3 +14,8 @@ text-align: center;
 #imgDni, .texto-centrado{
    text-align: center;
 }
+
+#mnsError{
+    color: red;
+    font-style: italic;
+}

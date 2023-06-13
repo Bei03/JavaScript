@@ -87,6 +87,8 @@ x=10;
 y=2;
 let modulo=10%2;
 console.log("El modulo entre 10/2 es" + modulo);
+//console.log("El modulo entre " + print(x) + "/" + print(y) + "es =" + modulo);
+//document.write("El modulo entre " + x + "/" y + "es =" + modulo);
 
 let operacion=(x+2)*2-(y/3);
 console.log(operacion);

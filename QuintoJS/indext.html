@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hoy es <span id="dia"></span></h1>
+    <h3>Tu nota final es <span id="nota"></span></h3>
+
+    <div>
+        <input type="text" id="notaS" placeholder="Indica tu nota" required>
+        <button value="Averígualo" onclick="indicaTuNota()">Mostrar resultado</button>
+    
+        <p id="error"></p>
+    
+        <h1 id="resultado">Resultado...</h1>
+    </div>
+    
+    <label id="colorS">Indique un número del 1 al 6</label>
+    <input type="number" id="numero">
+<input type="submit" onclick="cambiarColor()" value="Haz magia" id="color">
+<div id="caja" style="width: 250px; height: 250px;"></div>
+<div id="caja2" style="width: 250px; height: 250px;"></div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

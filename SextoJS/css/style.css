@@ -3,9 +3,12 @@ body{
     background-color: pink;
     color: rgb(255, 255, 255);
     font-size: large;
+    margin: auto;
+    width: auto;
+    
 }
 header, .botones{
-    width: 50%;
+    width: auto;
     text-align: center;
     margin: auto;
     display: flex;
@@ -14,8 +17,8 @@ header, .botones{
 .botones button, .botones a{
     background-color: rgb(247, 184, 249);
     color: rgb(0, 0, 0);
-    padding: 15px;
-    margin: 10px 5px;
+    padding: 30px;
+    margin: 10px 20px;
     box-shadow: 5px 5px rgb(242, 97, 255);
 }
 a{
@@ -33,4 +36,64 @@ a:hover{
 }
 h1{
     text-align: center;
+}
+
+div{
+    width: 40%;
+    margin: 50%;
+}
+
+@media (width<=500px){
+    .botones{
+        width: 70%;
+        padding: 2%;
+        margin: auto;
+        flex-wrap: wrap;
+
+
+    }
+    .h1{
+        width: auto;
+    }
+    .section{
+        width: 80%;
+        margin: auto;
+    }
+    .body{
+        font-size: small;
+    }
+    .botones a{
+        width: 70%;
+        display: block !important;
+    }
+
+}
+
+@media (width>=1000px){
+    .container{
+        width: 50%;
+        margin: auto;
+    }
+    .botones{
+        width: auto;
+        padding: 2%;
+        margin: auto;
+
+    }
+    .h1{
+        width: auto;
+    }
+    .section{
+        width: 80%;
+        margin: auto;
+    }
+
+    .div{
+        width: 80%;
+        margin: auto
+    }
+
+    .body{
+        font-size: small;
+    }
 }

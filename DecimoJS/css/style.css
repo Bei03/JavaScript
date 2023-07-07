@@ -1,0 +1,63 @@
+
+
+.container{
+    width: 70%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto; /*si no lo aplica, colocar important*/
+
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(251, 0, 255);
+    box-shadow: rgba(245, 89, 188, 0.596) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    /*para que el contenido esté centrado dentro de la caja*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+    text-align: justify;
+}
+
+.card p{
+    padding: 0 5%;
+}
+
+h2{
+    color: rgb(251, 111, 244);
+}
+
+.imagen img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    text-align: justify;
+    width: 60%;
+}
+
+
+/*CSS MEDIA QUERIES=> RESPONSIVE DESIgn*/
+
+@media(width<=800){
+    .container{
+        width: 100%;
+    }
+    .card{
+        width: 90%;
+    }
+
+   .body{
+   background-color: lightpink
+} 
+}
+
+@media (width <=1000){
+    .body{
+        background-color: lightblue;
+    }
+} 
+    

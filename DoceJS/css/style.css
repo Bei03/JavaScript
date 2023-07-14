@@ -1,0 +1,38 @@
+#formTC, #formPP, #formB{
+    display: none;
+}
+
+
+h1, h3{
+    text-align: center;
+}
+
+/*TABLET*/
+@media (768px>= width>=1279px) {
+#form{
+    width: 70%;
+    margin: auto;
+
+}
+}
+/*PC*/
+@media(width <1280px){ 
+#form{
+    width: 50%;
+    margin: auto;
+    background-color: rgba(234, 169, 191, 0.876);
+
+}}
+/*SMARTPHONE*/
+@media (width<767px){
+    #form{
+        width: 90%;
+        margin: auto;
+    }
+    .listaFP{
+        display: flex;
+        
+
+    }
+}
+

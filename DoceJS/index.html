@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fechas y objetos</title>
+    <script src="js/script.js"></script>
+    <script src="js/scriptform.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>FECHAS</h1>
+    <p>Hoy es <span id="fecha"></span></p>
+    <p>La hora es <span id="hora"></span></p>
+    
+    <h3>La fecha de mi nacimiento es <span id="fNaci"></span></h3>
+    <h4>La fecha corta es <span id="fcorta"></span></h4>
+    <h4>La fecha corta es <span id="fcorta2"></span></h4>
+
+
+    <input type="date" id="fechaInp">
+    <button id="boton"> Enviar</button>
+
+
+
+<hr>
+
+    <h1>VALIDAR FORMULARIOS</h1>
+    <h3>Compra de ticket</h3>
+    <form action="" method="get" id="form">
+       <p> <label for="nombre">Nombre Visitante: </label>
+        <input type="text" name="nombre" id="nombre" maxlength="50" required></p>
+       <p> <label for="edad">Edad</label>
+        <input type="text" id="edad" min="18" max="105" required></p>
+      <p> <label for="fechaVisita">Fecha de Visita: </label>
+        <input type="date" name="fechaVisita" id="fechaVisita" required></p> 
+       <p> <label for="cantidadAdultos">Nº de Entradas Adultos: </label>
+        <input type="text" id="cantidadAdultos" name="cantidadAdultos" min="0" max="200"></p>
+       <p> <label for="cantidadNinos">Nº de Entradas Niños: </label>
+        <input type="number" id="cantidadNinos" name="cantidadNinos" min="0" max="200"></p>
+        <p><label for="fPago">Forma de pago: </label></p>
+        <p class="listaFP"><input type="radio" name="fPago" value="visa">Visa 
+        <input type="radio" name="fPago" value="master">Master 
+        <input type="radio" name="fPago" value="paypal">Paypal 
+        <input type="radio" name="fPago" value="bizum">Bizum</p>
+
+
+ 
+ 
+ <div id="formTC">
+        <label for="nombreTC">Nombre del titular:</label>
+        <input type="text" id="titular" name="titular" required>
+        <label for="nTC">Nº de tarjeta</label>
+        <input type="text" name="nTC" id="nTC" maxlength="16" minlength="16">
+        <label for="CVV">CVV</label>
+        <input type="text" id="CVV" name="CVV"  maxlength="3" min="3">
+</div>
+
+<div id="formPP">
+    <label for="emailPP">Email de Paypal: </label>
+    <input type="password" id="passPP" name="passPP">
+</div>
+
+<div id="formB">
+    <label for="nombreB">Nombre:</label>
+    <input type="text" name="nombreB" id="nombreB" required>
+    <label for="telf">Nº de teléfono móvil:</label>
+    <input type="text" name="telfB" id="telfB" min="9" max="9">
+</div>
+<p>
+    <input type="submit" value="Enviar">
+</p>
+
+
+
+
+
+</form>
+</body>
+</html>

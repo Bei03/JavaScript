@@ -9,7 +9,7 @@ body{
 }
 
 .logo img{
-    width: 30%;
+    width: 15%;
   }
 .header{
     background: rgb(55,157,19);
@@ -18,19 +18,126 @@ body{
     align-items: center;
 }
 
-.menu ul{
+.menu ul, .headerSup ul{
     list-style-type: none;
     text-align: right;
 }
 
 .menu li{
     color: rgb(0, 74, 0);
-    border-left: 1px solid rgb(0, 74, 0);
+    border-left: 2px solid rgb(255, 255, 255);
     display: inline-block;
     font-size: 1em;
     padding: 1%;
 
 }
+
+.headerSuprow li{
+    display: inline-block;
+    font-size: 0.8em;
+    align-items:end;
+}
+
+.headerSuprow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-symbols-outlined{
+    padding-right: 5px;
+    width: center;
+}
+
+.headerSuprow{
+    text-align: center;
+    list-style-type: none;
+    background-color: #cfa455;
+}
+
+.imagen img{
+    width: 100%;
+    transform: scaleX(-1); /*Para voltear la imagen horizontalmente*/
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.imagen{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.imagen h1{
+    color: white;
+    font-size: 2rem;
+}
+.imagen p{
+    color: white;
+    text-decoration: wavy;
+    font-style: italic;
+}
+
+
+.button-53 {
+  background-color:  rgb(55,157,19);
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #ffffff solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #fffcfc;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+
+
 
 
 

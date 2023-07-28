@@ -1,39 +1,35 @@
-var elements = document.getElementsByClassName("column");
 
-// Declare a loop variable
-var i;
+let arrayImg=new Array(4) //declaramos que este array va a tener 4 elementos
+arrayImg[0]=new Image();
+arrayImg[0].src="img/fotaza-leones.webp";
+arrayImg[1]=new Image();
+arrayImg[1].src="img/serpiente.webp";
+arrayImg[2]=new Image();
+arrayImg[2].src="img/suricato-abrazo.webp";
+arrayImg[3]=new Image();
+arrayImg[3].src="img/pulpo-comun.webp"
+arrayImg[4]=new Image();
+arrayImg[4].src="img/zebra-fotaza.webp"
 
-// Full-width images
-function one() {
-    for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "100%";  // IE10
-    elements[i].style.flex = "100%";
-  }
+//declaramos un contador que lleve la cuenta de la imagen que se va mostrando, el cual comienza en 1 y terminaá en 4 y de nuevo, volverá al 1 y así
+
+let contador=0;
+
+function cambiarImg(){
+  document.querySelector("#banner").src=arrayImg[contador].src;
+  contador++;
+  //operador ternario
+  contador=contador==5?contador=0:contador=contador;
+  setTimeout("cambiarImg()", 5000); //se llama a si mismo y así, vuelve a realizar la función
 }
 
-// Two images side by side
-function two() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "50%";  // IE10
-    elements[i].style.flex = "50%";
-  }
+
+function validarForm(){
+  alert("Validando...");
 }
 
-// Four images side by side
-function four() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "25%";  // IE10
-    elements[i].style.flex = "25%";
-  }
-}
-
-// Add active class to the current button (highlight it)
-var header = document.getElementById("myHeader");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+window.addEventListener("load",()=>{
+  let boton=document.querySelector("#boton");
+  boton.addEventListener("click", validarForm);
+  cambiarImg();
+})

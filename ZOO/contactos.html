@@ -13,13 +13,13 @@
         <form action="action_page.php">
       
           <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="entrada">
       
           <label for="apellido">Apellido</label>
-          <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+          <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="entrada">
       
           <label for="formCto">Preferencia de contacto</label>
-          <select id="formCto" name="formCto" class="formCto">
+          <select id="formCto" name="formCto" class="entrada">
             <option value="">Seleccione una opción...</option>
             <option value="telefono">Teléfono</option>
             <option value="email">Email</option>
@@ -41,8 +41,8 @@
           <label for="mensaje">Mensaje</label>
           <textarea id="mensaje" name="mensaje" placeholder="Escribe algo..." style="height:200px"></textarea>
       
-          <button id="boton" value="Enviar">Enviar</button>
-      
+          <button id="boton" type="button">Enviar</button>
+      <p id="mensaje"></p>
         </form>
       </div>
 </body>

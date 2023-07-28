@@ -32,4 +32,20 @@ window.addEventListener("load",()=>{
   let boton=document.querySelector("#boton");
   boton.addEventListener("click", validarForm);
   cambiarImg();
+});
+
+window.addEventListener("load", ()=>{
+
+
+//CREAR EFECTO DE AGRANDAR LAS IMAGENES CUANDO SE PASA EL RATON
+let imagenes=document.querySelectorAll(".fotis");
+  imagenes.forEach(items=>{
+   items.addEventListener("mouseover", ()=>{  
+    items.style.width="20%";
+  });
+  items.addEventListener("mouseout",()=>{
+    items.style.width="auto";
+  })
+
+})
 })

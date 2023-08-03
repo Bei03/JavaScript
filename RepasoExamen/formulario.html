@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envío</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header row">
+        <div class="logo col-4">
+        </div>
+        <div class="menu col-8">
+        <ul>
+            <li>Inicio</li>
+            <li>Conócenos</li>
+            <li>Entradas</li>
+        </ul>
+        </div>
+    </header>
+</ul>
+</header>
+</div>
+<div class="container">
+    <form action="action_page.php">
+  
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="entrada">
+  
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="entrada">
+  
+      <label for="formCto">Preferencia de contacto</label>
+      <select id="formCto" name="formCto" class="entrada">
+        <option value="">Seleccione una opción...</option>
+        <option value="telefono">Teléfono</option>
+        <option value="email">Email</option>
+        <option value="correoPostal">Correo Postal</option>
+      </select>
+      <div class="telOculto">
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Indique su número de teléfono">
+      </div>
+      <div class="emailOculto">
+        <label for="emai">Email</label>
+        <input type="text" id="telefono" name="email" placeholder="Indique su correo electrónico">
+      </div>
+      <div class="correOculto">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Indique su dirección">
+      </div>
+  
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe algo..." style="height:200px"></textarea>
+  
+      <button id="boton" type="button">Enviar</button>
+  <p id="mensaje"></p>
+    </form>
+  </div>
+
+
+  
+</body>
+</html>

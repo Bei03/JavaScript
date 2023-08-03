@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <!-- <img src="img/favicon.png"> -->
+        <a class="active" href="#">Inicio</a> 
+        <a href="#">Envío Nacional</a> 
+        <a href="#">Envío Internacional</a> 
+        <a href="#">Contacto</a>
+      </div>
+      </body>
+
+      <div class="col-12 imagen">
+        <img src="img/enviar-paqueteria.webp" alt="paquetes">
+        <div class="centrado col-4">
+           <div class="titu"><h1>¿CUÁNTO ME VA A COSTAR MI ENVÍO?</h1> </div>
+                
+           <section class="peso">
+            <label for="peso">Indique el peso aproximado del artículo a enviar</label>
+            <select name="peso" id="peso">
+            <option value=""></option>
+            <option value="2.88">Hasta 0.5kg</option>
+            <option value="4.75">Hasta 5kg</option>
+            <option value="4.75">Hasta 5kg</option>
+            <option value="6.49">Hasta 10kg</option>
+            <option value="9.39">Hasta 20kg</option>
+          </select>
+           <br>
+           
+           <div class="km">
+           <label for="kilometros">Seleccione lugar de envío</label>
+                <select id="kilometros">
+                <option value=""></option>
+                <option value="5">Tu misma provincia</option>
+                <option value="8">Tu misma comunidad autónoma</option>
+                <option value="16">Baleares/Canarias</option>
+                <option value="18">Ceuta/Melilla</option>
+                <option value="12">Resto de España</option>
+                <option value="20">Europa</option>
+                <option value="25">Resto del Mundo</option>
+               </select>
+            
+            </div>
+              <button type="submit" onclick="calcular()" class="boton">Precio final</button>
+          <h3 id="resultado"></h3>    
+   
+            </div>
+          </section>
+          
+          <div class="footer">
+            <p class="f1"><span class="material-symbols-outlined">
+                Email:
+                </span>info@uship.es</p>
+            <p class="f2"><span class="material-symbols-outlined">
+                Teléfono:
+                </span>+34 925 431 523</p>
+            <p class="f3">
+                <span class="material-symbols-outlined">
+                Ubicación:
+                    </span>Allá donde lo necesites. España
+              </p>
+          </div>
+    
+    
+    </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+      </html> 
+    
+</body>
+</html>
